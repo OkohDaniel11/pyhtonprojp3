@@ -276,7 +276,7 @@ def home():
     <p>Click <a href="/play">here</a> to play the game.</p>
     """
 
-@app.route('/play')
+@app.route('/play', methods=['GET', 'POST'])
 def play_game():
     if request.method == 'POST':
         return run_game()
