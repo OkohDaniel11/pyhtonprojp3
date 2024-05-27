@@ -1,32 +1,101 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quiz Game
+This is a simple quiz game implemented in Python. The game presents the user with multiple-choice questions from different categories such as general knowledge, geography, and computer-related topics.
 
-Welcome,
+## Table of Contents
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+- [Introduction](#introduction)
+- [Features](#Features)
+- [How to play](#how-to-Play)
+- [Questionnaire](#Questionnaire)
+    - [General Knowledge](#general-knowledge)
+    - [Geography](#Geography)
+    - [Computer](#Computer)
+- [Requirements](#Requirements)
+- [Usage](#Usage)
+- [Credits](#Credits)
+- [License](#License)
 
-## Reminders
+  
+## Features
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+- **User Interaction:** The game prompts the user to choose a category of questions they want to answer.
+- **Questionnaire Selection:** Users can select from three different questionnaires: General Knowledge, Geography, or Computer.
+- **Scoring:** Users receive feedback on their answers immediately after each question and are informed of their overall score at the end of the questionnaire.
+- **Questionnaire Restart:** If the user achieves a perfect score or wishes to retry a questionnaire, they are given the option to restart.
+  
+## How to Play
 
-## Creating the Heroku app
+- Run the run_game() function.
+- Choose a category of questions: General Knowledge, Geography, or Computer.
+- Answer each question by typing the corresponding letter (a, b, c, or d) for multiple-choice questions.
+- Receive immediate feedback on your answers and your final score at the end of the questionnaire.
+- Choose to play again or select a different category of questions.
+- **Track Your Score:** Keep track of your overall score as you progress through the questionnaire.
+- **Play Again:** Decide whether to play again, explore other categories, or exit the game.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Questionnaire
 
-1. `heroku/python`
-2. `heroku/nodejs`
+### <ins>General Knowledge</ins>
+            Which is the only body part that is fully grown from birth?
+            answer = 'Eyes'
+            In what country was Elon Musk born 
+            answer = 'South Africa'
+            How many hearts does an octopus have?
+            answer '3'
+            What planet is closest to the sun? 
+            answer 'Mercury'
+            What is a group of crows called?
+            answer 'A murder' 
+### <ins>Geography</ins>
+            Geography
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+            What is the name of the tallest mountain in the world?
+            Answer:  Mount Everest 
+            Alternatives: 'K2' 'Lhotse' 'Makalu'
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+            Which country has the largest population in the world?
+            Answer: China
+            Alternatives: 'India' 'USA' 'Russia'
 
-Connect your GitHub repository and deploy as normal.
+            Where are the Spanish Steps located?
+            Answer: Rome, Italy
+            Alternatives: 'Madrid, Spain' 'Bogota, Colombia' 'Quito, Ecuador'
 
-## Constraints
+            What countries border directly north of Hungary?
+            Answer: Ukraine, Serbia
+            Alternatives: 'Turkey' 'Switzerland'
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+            What season does Australia experience in December?
+            Answer:  Summer 
+            Alternatives: 'Winter' 'Spring' 'Fall'         
+### <ins>Computer</ins>
+            Computer
 
----
+            What do you call a portable computer?
+            Answer: Laptop
 
-Happy coding!
+            What do you use to read CDs/DVDs?
+            Answer: Cd and DvD player
+
+            What memory below is the largest?
+            Answer: 1TB
+            Alternatives: '1GB' '55000Bytes' '10GB'
+
+            You need an internet browser to access the Internet. (True/False)
+            Answer: True
+
+            A software comes with a product key.(True/False)
+            Answer: True
+## Requirements
+- **Python 3.x:** Ensure you have Python 3.x installed on your system.
+- **Standard libraries:** The game utilizes standard Python libraries such as random and sys.
+## Usage
+- Clone this repository to your local machine.
+- Navigate to the directory containing the Python script **(quiz_game.py)**.
+- ### Run the script using Python:
+          python quiz_game.py
+## Credits
+This quiz game was created by Daniel Okoh as a fun project to test Python skills and knowledge.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
