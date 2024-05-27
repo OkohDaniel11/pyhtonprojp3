@@ -1,3 +1,6 @@
+from flask import Flask, request
+
+app = Flask(__name__)
 
 
 def do_you_want_to_play():
@@ -268,6 +271,18 @@ def computer_questions():
     q_restart(score, "Computer")
 
 
-do_you_want_to_play()
+@app.route('/')
+def home():
+    return """
+    <h1>Welcome to my Quiz Game</h1>
+    <p>Click <a href="/play">here</a> to play the game.</p>
+    """
+
+@app.route('/play')
+def play_game():
+    return do_you_want_to_play()
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
