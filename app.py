@@ -7,21 +7,20 @@ app = Flask(__name__)
 def do_you_want_to_play():
     """
     Check if player wants to run the game
-    """
-    return """
-    <html>
-    <head><title>Welcome to my Quiz Game</title></head>
-    <body>
-    <h1>Welcome to my Quiz Game 🙂</h1>
-    <form action="/play" method="post">
-        <label for="play">Do you want to play?</label><br>
-        <input type="text" id="play" name="play" value="yes"><br>
-        <input type="submit" value="Submit">
-    </form>
-    </body>
-    </html>
-    """
-
+    """ 
+    game_output = 'Welcome to my Quiz Game 🙂\n'
+    for i in range(3):
+        playing = input("Do you want to play ? (yes/no):\n")
+        if playing.lower() == "yes":
+            game_output += run_game
+            return game_output
+        elif playing.lower() == "no":
+            break
+        else:
+            game_output += f'Are you sure ?{" (Try again)" if i > 1 else ""}\n'
+    game_output += "Then another time. Have a nice day 🙂\n"
+    return game_output
+ 
 
 def run_game():
     """
