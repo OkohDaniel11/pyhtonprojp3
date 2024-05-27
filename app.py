@@ -1,7 +1,3 @@
-import os
-from flask import Flask, request
-
-app = Flask(__name__)
 
 
 def do_you_want_to_play():
@@ -268,22 +264,5 @@ def computer_questions():
     q_restart(score, "Computer")
 
 
-@app.route('/')
-def home():
-    return """
-    <h1>Welcome to my Quiz Game</h1>
-    <p>Click <a href="/play">here</a> to play the game.</p>
-    """
-
-@app.route('/play', methods=['GET', 'POST'])
-def play_game():
-    if request.method == 'POST':
-        return run_game()
-    else:
-        return do_you_want_to_play()
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(debug=True, host='0.0.0.0', port=port)
-
+do_you_want_to_play()
 
