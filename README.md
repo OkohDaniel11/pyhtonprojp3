@@ -91,9 +91,9 @@ This is a simple quiz game implemented in Python. The game presents the user wit
 - **Standard libraries:** The game utilizes standard Python libraries such as random and sys.
 ## Usage
 - Clone this repository to your local machine.
-- Navigate to the directory containing the Python script **(quiz_game.py)**.
+- Navigate to the directory containing the Python script **(run.py)**.
 - ### Run the script using Python:
-          python quiz_game.py
+          python run.py
 ## Credits
 This quiz game was created by Daniel Okoh as a fun project to test Python skills and knowledge.
 
