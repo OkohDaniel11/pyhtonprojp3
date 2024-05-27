@@ -1,3 +1,9 @@
+import os
+
+port = int(os.environ.get("PORT", 5000))
+app.run(host="0.0.0.0", port=port)
+
+
 def do_you_want_to_play():
     """
     Check if player wants to run the game
