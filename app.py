@@ -8,22 +8,18 @@ def do_you_want_to_play():
     """
     Check if player wants to run the game
     """
-    print('Welcome to my Quiz Game 🙂')
+    game_output = 'Welcome to my Quiz Game 🙂\n'
     for i in range(3):
-        try:
-            playing = input("Do you want to play ? (yes/no):\n")
-        except EOFError:
-            print("Please provide input.")
-            continue
-        
+        playing = input("Do you want to play ? (yes/no):\n")
         if playing.lower() == "yes":
-            return run_game()
+            game_output += run_game
+            return game_output
         elif playing.lower() == "no":
             break
         else:
-            print(f'Are you sure ?{" (Try again)" if i > 1 else ""}')
-    print("Then another time. Have a nice day 🙂")
-    return False
+            game_output += f'Are you sure ?{" (Try again)" if i > 1 else ""}\n'
+    game_output += "Then another time. Have a nice day 🙂\n"
+    return game_output
 
 
 def run_game():
