@@ -1,6 +1,8 @@
 # Quiz Game
 This is a simple quiz game implemented in Python. The game presents the user with multiple-choice questions from different categories such as general knowledge, geography, and computer-related topics.
 
+![Am I responsive](/assets/heroku%20app.png)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -22,13 +24,18 @@ This is a simple quiz game implemented in Python. The game presents the user wit
 - **Questionnaire Selection:** Users can select from three different questionnaires: General Knowledge, Geography, or Computer.
 - **Scoring:** Users receive feedback on their answers immediately after each question and are informed of their overall score at the end of the questionnaire.
 - **Questionnaire Restart:** If the user achieves a perfect score or wishes to retry a questionnaire, they are given the option to restart.
+
+![Heroku program](/assets/heroku%20program.png)
   
 ## How to Play
 
 - Run the run_game() function.
+    -![Start of Game](/assets/start%20of%20game.png)
 - Choose a category of questions: General Knowledge, Geography, or Computer.
 - Answer each question by typing the corresponding letter (a, b, c, or d) for multiple-choice questions.
+    - ![Questionaire choices](/assets/list%20of%20questionnaires.png)
 - Receive immediate feedback on your answers and your final score at the end of the questionnaire.
+    -![Scores and Retries](/assets/score%20and%20retry.png)
 - Choose to play again or select a different category of questions.
 - **Track Your Score:** Keep track of your overall score as you progress through the questionnaire.
 - **Play Again:** Decide whether to play again, explore other categories, or exit the game.
