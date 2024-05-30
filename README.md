@@ -2,6 +2,7 @@
 This is a simple quiz game implemented in Python. The game presents the user with multiple-choice questions from different categories such as general knowledge, geography, and computer-related topics.
 
 ![Am I responsive](/assets/heroku%20app.png)
+View live application here: [Daniel Quiz](https://daniel-quiz-aad9c72cbc5e.herokuapp.com/)
 
 ## Table of Contents
 
