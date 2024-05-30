@@ -31,12 +31,14 @@ View live application here: [Daniel Quiz](https://daniel-quiz-aad9c72cbc5e.herok
 ## How to Play
 
 - Run the run_game() function.
-    -![Start of Game](/assets/start%20of%20game.png)
+    - ![Start of Game](/assets/start%20of%20game.png)
 - Choose a category of questions: General Knowledge, Geography, or Computer.
 - Answer each question by typing the corresponding letter (a, b, c, or d) for multiple-choice questions.
     - ![Questionaire choices](/assets/list%20of%20questionnaires.png)
+
 - Receive immediate feedback on your answers and your final score at the end of the questionnaire.
-    -![Scores and Retries](/assets/score%20and%20retry.png)
+    - ![Scores and Retries](/assets/score%20and%20retry.png)
+
 - Choose to play again or select a different category of questions.
 - **Track Your Score:** Keep track of your overall score as you progress through the questionnaire.
 - **Play Again:** Decide whether to play again, explore other categories, or exit the game.
